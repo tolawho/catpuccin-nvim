@@ -26,7 +26,7 @@ function M.compile(flavour)
 		string.format(
 			[[
 return string.dump(function()
-vim.o.termguicolors = true
+vim.o.termguicolors = false
 if vim.g.colors_name then vim.cmd("hi clear") end
 vim.o.background = "%s"
 vim.g.colors_name = "catppuccin-%s"
